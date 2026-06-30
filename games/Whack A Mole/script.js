@@ -32,7 +32,7 @@ moles.forEach(mole => {
         }
     })
 })
-let moleInterval = setInterval(randomMole, 1500);
+let moleInterval = setInterval(randomMole, 900);
 let timer = setInterval(() => {
     time--;
     timeText.innerText = time;
