@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Black Ops One", system-ui;
+}
+::selection {
+    /* background-color: violet; */
+    color: #FF2E7A;
+}
+
+body{
+    background-image: url("../../assets/images/backgroundImage.png");
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    width:600px;
+    text-align:center;
+}
+
+h1{
+    margin-bottom:20px;
+}
+
+.controls{
+    margin-bottom:20px;
+}
+
+input{
+    width:80px;
+    padding:8px;
+    text-align:center;
+    font-size:18px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    border-top: 3px solid rgb(18, 18, 146);
+    border-left: 3px solid rgb(9, 9, 117);
+    border-bottom: 2px solid #FF2E7A;
+    border-right: 2px solid #FF2E7A;
+    outline: none;
+}
+
+
+button{
+    padding:8px 15px;
+    cursor:pointer;
+    font-size:16px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    border-top: 3px solid rgb(18, 18, 146);
+    border-left: 3px solid rgb(9, 9, 117);
+    border-bottom: 2px solid #FF2E7A;
+    border-right: 2px solid #FF2E7A;
+}
+
+#status{
+    margin:20px 0;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.board{
+    width:500px;
+    height:500px;
+    border-radius: 12px;
+    margin:auto;
+    display:grid;
+    border:3px solid white;
+    background: url("images/image.png");
+    background-size: cover;
+}
+
+.cell{
+    border:1px solid white;
+    background:transparent;
+    color:white;
+    font-size:35px;
+    cursor:pointer;
+}
+

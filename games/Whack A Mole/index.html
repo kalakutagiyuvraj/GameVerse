@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Whack A Mole</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            user-select: none;
+        }
+
+        ::selection {
+            /* background-color: violet; */
+            color: #FF2E7A;
+        }
+
+        body {
+            background: #1e1e1e;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        .info {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin: 20px;
+            font-size: 24px;
+        }
+
+        .board {
+            width: 360px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .hole {
+            width: 100px;
+            height: 100px;
+            background: #5a3825;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .mole {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -100px;
+            left: 10px;
+            padding-top: 5px;
+            transition: 0.3s;
+        }
+
+        .mole img {
+            width: 100%;
+            pointer-events: none;
+            user-select: none;
+            border-radius: 50%;
+        }
+
+        .show {
+            bottom: 15px;
+        }
+
+        button {
+            margin-top: 25px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🔨 Whack A Mole</h1>
+    <div class="info">
+        <div>Score : <span id="score">0</span></div>
+        <div>Time : <span id="time">30</span></div>
+
+    </div>
+
+
+    <div class="board">
+
+        <div class="hole">
+            <div class="mole"><img src="image/image.png" alt=""></div>
+        </div>
+        <div class="hole">
+            <div class="mole"><img src="image/image.png" alt=""></div>
+        </div>
+        <div class="hole">
+            <div class="mole"><img src="image/image.png" alt=""></div>
+        </div>
+
+        <div class="hole">
+            <div class="mole"><img src="image/image.png" alt=""></div>
+        </div>
+        <div class="hole">
+            <div class="mole"><img src="image/image.png" alt=""></div>
+        </div>
+        <div class="hole">
+            <div class="mole"><img src="image/image.png" alt=""></div>
+        </div>
+
+        <div class="hole">
+            <div class="mole"><img src="image/image.png" alt=""></div>
+        </div>
+        <div class="hole">
+            <div class="mole"><img src="image/image.png" alt=""></div>
+        </div>
+        <div class="hole">
+            <div class="mole"><img src="image/image.png" alt=""></div>
+        </div>
+    </div>
+
+    <button onclick="restartGame()">Restart</button>
+
+    <script src="../../script.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

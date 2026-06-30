@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Space Shooter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: "Black Ops One", system-ui;
+            user-select: none;
+        }
+
+        ::selection {
+            /* background-color: violet; */
+            color: #FF2E7A;
+        }
+
+        body {
+            margin: 0;
+            background-image: url("../../assets/images/backgroundImage.png");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        #game {
+            width: 500px;
+            height: 700px;
+            background-image: url("images/image.png");
+            background-size: cover;
+            border: 2px solid #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #player {
+            width: 70px;
+            height: 70px;
+            background: transparent;
+            position: absolute;
+            bottom: 20px;
+            left: 225px
+        }
+
+        #player img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .enemy {
+            width: 60px;
+            height: 60px;
+            background: transparent;
+            position: absolute
+        }
+
+        .bullet {
+            width: 6px;
+            height: 18px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            background: lime;
+            position: absolute
+        }
+
+        .enemyBullet {
+            width: 6px;
+            height: 18px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            background: orange;
+            position: absolute
+        }
+
+        #info {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: white;
+            font-size: 18px;
+            font-family: "Black Ops One", system-ui;
+            ;
+        }
+
+        #over {
+            position: absolute;
+            top: 300px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font: 35px Arial;
+            display: none;
+            font-family: "Black Ops One", system-ui;
+        }
+
+        button {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="game">
+        <div id="info"></div>
+        <div id="player"><img src="images/heroCraft.png" alt=""></div>
+        <div id="over">GAME OVER<br>
+            <button onclick="location.reload()">Restart</button>
+        </div>
+    </div>
+
+
+    <script src="../../script.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

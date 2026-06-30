@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Stone Paper Scissors</h1>
+        <div class="score">
+            <div>You : <span id="playerScore">0</span></div>
+            <div>Computer : <span id="computerScore">0</span></div>
+        </div>
+
+        <div class="choices">
+            <button class="choice" data-choice="Stone">
+                Stone
+            </button>
+
+            <button class="choice" data-choice="Paper">
+                Paper
+            </button>
+
+            <button class="choice" data-choice="Scissors">
+                Scissors
+            </button>
+        </div>
+
+        <div class="result" id="result">
+            Choose your move!
+        </div>
+
+        <button id="restart">
+            Restart
+        </button>
+    </div>
+
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>

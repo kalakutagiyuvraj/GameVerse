@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Black Ops One", system-ui;
+}
+::selection {
+    /* background-color: violet; */
+    color: #FF2E7A;
+}
+body {
+    background-image: url("../../assets/images/backgroundImage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+canvas {
+    background-image: url("assets/background.png");
+    background-size: cover;
+    margin: 20px 0;
+    border: 3px solid #4CAF50;
+}
+
+.scoreBoard {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
